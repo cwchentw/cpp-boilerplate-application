@@ -1,10 +1,10 @@
-# C Boilerplate for Application
+# C++ Boilerplate for Application
 
-A C boilerplate project to build a C based application.
+A C++ boilerplate project to build a C++ based application.
 
 ## System Requirements
 
-* C compiler (Clang or GCC)
+* C++ compiler (Clang or GCC)
 * GNU Make (for compilation only)
 
 ## Usage
@@ -12,7 +12,7 @@ A C boilerplate project to build a C based application.
 Clone the project:
 
 ```
-$ git clone https://github.com/cwchentw/c-boilerplate-application.git myapp
+$ git clone https://github.com/cwchentw/cpp-boilerplate-application.git myapp
 ```
 
 Move your working directory to the root of *myapp*:
@@ -21,7 +21,7 @@ Move your working directory to the root of *myapp*:
 $ cd myapp
 ```
 
-Modify *main.c* as needed. You may add or remove C source files (*.c*) as needed.
+Modify *main.cc* as needed. You may add or remove C source files (*.c*) or C++ source files (*.cc*, *.cpp* or *.cxx*) as needed.
 
 Compile the application:
 
@@ -53,8 +53,11 @@ Here are the parameters in *Makefile*:
 
 * **PROGRAM**: the name of the compiled program
 * **C_STD**: the C standard as a GCC C dialect
+* **CXX_STD**: the C++ standard as a GCC C++ dialect
 
 ## Note
+
+You may mix C and C++ in the same project as well.
 
 The project assumes a Unix console environment. Windows users can install [MSYS2](https://www.msys2.org/) to obtain a decent Unix environment.
 
